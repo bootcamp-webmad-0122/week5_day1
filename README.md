@@ -33,7 +33,8 @@ Las dependecias `express-session` y `mongo-store` ofrecen configuraciones que pe
     next()
   }
   module.exports = { myMiddleware }
-  
+  ````
+  ````javascript 
   // any-routes.js
   const { myMiddleware } = require('./../middleware/any-middleware')
   ````
