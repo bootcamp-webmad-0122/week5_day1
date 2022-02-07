@@ -28,7 +28,10 @@ Las dependecias `express-session` y `mongo-store` ofrecen configuraciones que pe
 - Es posible crear middlewares en un archivo independiente, exportarlos e importarlos donde sean necesarios:
   ````javascript
   // any-middleware.js
-  const myMiddleware = (req, res, next) => next()
+  const myMiddleware = (req, res, next) => {
+    console.log("---- MIDDLEWARE EXECUTED -----")
+    next()
+  }
   module.exports = { myMiddleware }
   
   // any-routes.js
