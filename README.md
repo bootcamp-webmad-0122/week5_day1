@@ -44,6 +44,8 @@ Las dependecias `express-session` y `mongo-store` ofrecen configuraciones que pe
 A través de un _custom middleware_  es posible limitar el acceso a ciertas rutas para usuarios no identificados:
 ```javascript
 const isLoggedIn = (req, res, next) => req.session.currentUser ? next() : res.render('forbidden')
+
+module.exports = { isLoggedIn }
 ```
 
 
