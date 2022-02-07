@@ -34,7 +34,7 @@ Las dependecias `express-session` y `mongo-store` ofrecen configuraciones que pe
   // any-routes.js
   const { myMiddleware } = require('./../middleware/any-middleware')
   ````
-- Asimismo, pueden ser incluídos entre rutas o como parte de una ruta, entre el endpoint y el callback:
+- Asimismo, pueden ser incluídos entre rutas o como parte de una ruta, argumentándolo entre el endpoint y el callback:
   ````javascript
   // any-routes.js
   app.get('/endpoint', myMiddleware, (req, res, next) => res.render('any-view'))
