@@ -6,7 +6,7 @@
 ## Main points: session management
 
 Para gestionar autorización y sesiones en un Ironlauncher, es necesario:
-1. Instalar `bcrypt`, `express-session` y `connect-mongo`
+1. Instalar `bcryptjs`, `express-session` y `connect-mongo`
 2. Incluir la clave `SESS_SECRET` en el archivo `.env`
 3. Incluir el archivo `session.config.js` en el directorio `configs` y enlazarlo a `app.js` mediante `require("./config/session.config")(app)`
 
